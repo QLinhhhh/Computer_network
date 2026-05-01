@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Quiz Test</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .controls { display: flex; gap: 10px; margin-bottom: 20px; padding: 15px; background: #f5f5f5; border-radius: 8px; }
+        input[type="number"] { width: 150px; padding: 5px; }
+        button { padding: 5px 15px; cursor: pointer; background: #000; color: #fff; border: none; border-radius: 4px; }
+        
+        .question-block { margin-bottom: 30px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        .question-block h3 { margin-top: 0; }
+        .option { 
+            display: block; margin: 8px 0; padding: 12px; 
+            border: 1px solid #ccc; border-radius: 4px; cursor: pointer; 
+            transition: background 0.2s;
+        }
+        .option:hover:not(.disabled) { background-color: #eee; }
+        
+        /* Trạng thái UI */
+        .correct { background-color: #d4edda !important; border-color: #c3e6cb !important; color: #155724 !important; font-weight: bold; }
+        .wrong { background-color: #f8d7da !important; border-color: #f5c6cb !important; color: #721c24 !important; text-decoration: line-through; }
+        .disabled { pointer-events: none; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <input type="file" id="jsonFileInput" accept=".json">
+        <input type="number" id="numQuestions" placeholder="Số lượng câu hỏi" min="1">
+        <button id="startBtn">Tạo Bộ Đề</button>
+    </div>
+
+    <div id="quizContainer"></div>
+
+    <script>
+        let allQuestions = [];
+
+        // Xử lý nạp file JSON local
+        document.getElementById('jsonFileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                try {
+                    allQuestions = JSON.parse(event.target.result);
+                    alert(`Đã tải thành công ${allQuestions.length} câu hỏi vào bộ nhớ.`);
+                } catch (err) {
+                    alert("Lỗi parse JSON. Cấu trúc file của cậu đang sai định dạng.");
+                }
+            };
+            reader.readAsText(file);
+        });
+
+        // Xử lý tạo đề
+        document.getElementById('startBtn').addEventListener('click', () => {
+            const num = parseInt(document.getElementById('numQuestions').value);
+            
+            if (!allQuestions.length) return alert("Cậu chưa nạp file JSON.");
+            if (isNaN(num) || num <= 0 || num > allQuestions.length) return alert("Số lượng câu hỏi không hợp lệ.");
+
+            // Đảo câu hỏi: Dùng trick sort random (đủ dùng cho local, nếu cần chuẩn xác thuật toán hãy tự viết Fisher-Yates)
+            const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
+            const selectedQuestions = shuffled.slice(0, num);
+            
+            renderQuiz(selectedQuestions);
+        });
+
+        function renderQuiz(questions) {
+            const container = document.getElementById('quizContainer');
+            container.innerHTML = ''; // Clear DOM cũ
+            
+            questions.forEach((q, qIndex) => {
+                const block = document.createElement('div');
+                block.className = 'question-block';
+                
+                const title = document.createElement('h3');
+                title.textContent = `Câu ${qIndex + 1}: ${q.question}`;
+                block.appendChild(title);
+                
+                const optionsContainer = document.createElement('div');
+                
+                q.options.forEach((optText, optIndex) => {
+                    const optDiv = document.createElement('div');
+                    optDiv.className = 'option';
+                    optDiv.textContent = optText;
+                    
+                    // Logic chấm điểm & UI
+                    optDiv.addEventListener('click', function() {
+                        // Khóa toàn bộ các lựa chọn trong câu hỏi này sau khi click
+                        Array.from(optionsContainer.children).forEach(child => child.classList.add('disabled'));
+                        
+                        if (optIndex === q.answer) {
+                            this.classList.add('correct');
+                        } else {
+                            this.classList.add('wrong');
+                            // Tìm và bôi xanh đáp án đúng
+                            optionsContainer.children[q.answer].classList.add('correct');
+                        }
+                    });
+                    
+                    optionsContainer.appendChild(optDiv);
+                });
+                
+                block.appendChild(optionsContainer);
+                container.appendChild(block);
+            });
+        }
+    </script>
+</body>
+</html>

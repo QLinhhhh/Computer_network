@@ -1,0 +1,1082 @@
+[
+    {
+      "question": "Q1 In a typical Internet communication path which sequence is most accurate?",
+      "options": [
+        "Host to Router to Router to Host",
+        "Router to Host to Router",
+        "Router to Server only",
+        "Host to Host directly always"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q2 In Forouzan's description end systems are also called?",
+      "options": [
+        "Routers",
+        "Gateways",
+        "Protocols",
+        "Hosts"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q3 Which statement best describes the Internet?",
+      "options": [
+        "A communication protocol",
+        "A private network for universities",
+        "A collection of interconnected networks",
+        "A single global computer"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q4 Which concept best explains the Internet's scalability?",
+      "options": [
+        "Only one protocol exists",
+        "Independent networks connect using shared standards",
+        "One central controller manages everything",
+        "All devices use identical hardware"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q5 Which of the following is NOT considered an end system?",
+      "options": [
+        "Smartphone",
+        "Web server",
+        "Laptop",
+        "Router"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q6 Which of the following is the most prevalent access technology in corporate home networks?",
+      "options": [
+        "HFC",
+        "DSL",
+        "Ethernet",
+        "Bluetooth"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q7 Which access technology is described as a shared broadcast medium?",
+      "options": [
+        "FTTH Fiber to the Home",
+        "Cable Internet access",
+        "Dial up",
+        "DSL"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q8 Which physical medium has emerged as the dominant solution for high speed LAN networking?",
+      "options": [
+        "Twisted pair copper wire",
+        "Fiber optic cable",
+        "Coaxial cable",
+        "Terrestrial radio"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q9 How does 4G 5G wide area wireless access differ from WiFi?",
+      "options": [
+        "WiFi requires a user to be within a few tens of meters of an access point while cellular users can be tens of kilometers from a base station",
+        "There is no technical difference between the two",
+        "WiFi is only for data while cellular is only for voice",
+        "WiFi uses guided media while 4G 5G uses unguided media"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q10 What is a Hybrid Fiber Coax HFC network?",
+      "options": [
+        "A network that uses only twisted pair copper wire",
+        "A purely wireless cellular network",
+        "A DSL network that uses optical fiber",
+        "A cable access network that employs both fiber and coaxial cable"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q11 What are the two primary components that make up the network core?",
+      "options": [
+        "Firewalls and local ISPs",
+        "End systems and access networks",
+        "Packet switches (routers, switches) and communication links",
+        "Web browsers and HTTP servers"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q12 Which function is the global action responsible for determining the end to end paths taken by packets from a source to a destination?",
+      "options": [
+        "Forwarding",
+        "Queuing",
+        "Switching",
+        "Routing"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q13 What occurs in the network core when the arrival rate of packets to an outbound link temporarily exceeds that links transmission capacity?",
+      "options": [
+        "The router sends the packets back to the source host to be resized",
+        "The packets are automatically converted into circuit switched data",
+        "Arriving packets must wait in an output buffer queue resulting in queuing delays",
+        "The router immediately increases the links physical bandwidth"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q14 The network core: what is the fundamental relationship between routing algorithms and forwarding tables?",
+      "options": [
+        "Forwarding tables dictate which routing algorithm a router must use",
+        "They are two independent systems that do not interact",
+        "Forwarding tables are only used if the routing algorithm fails to find a path",
+        "The routing algorithm determines the values that are entered into the local forwarding tables"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q15 Under what specific condition does packet loss typically occur within a router?",
+      "options": [
+        "When an arriving packet finds a router's output buffer completely full",
+        "When the propagation delay of a link is too high",
+        "When a packet takes more than one second to traverse a single link",
+        "When the transmission rate of a link is too high for the physical medium"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q1 What determines the propagation delay of a link?",
+      "options": [
+        "The transmission rate R of the link",
+        "The distance between two routers and the propagation speed of the medium",
+        "The length of the packet L being sent",
+        "The current level of congestion in the network"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q2 Which statement best describes the fundamental difference between transmission delay and propagation delay?",
+      "options": [
+        "Propagation delay is only relevant in wireless networks while transmission delay is for wired",
+        "Transmission delay is always larger than propagation delay in wide area networks",
+        "Transmission delay depends on distance while propagation delay depends on packet length",
+        "Transmission delay is the time to push the packet into the link while propagation delay is the time for a bit to travel between routers"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q3 What are the four components that accumulate to form the total nodal delay at a router?",
+      "options": [
+        "Nodal Processing, Queuing, Transmission and Propagation",
+        "Encapsulation, Routing, Forwarding and Switching",
+        "Bandwidth, Throughput, Packet Loss and Latency",
+        "Transmission, Propagation, Congestion and Processing"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q4 If a server is sending a file of F bits to a client and the transfer takes T seconds, how is the average throughput calculated?",
+      "options": [
+        "F divided by T bits per second",
+        "T divided by F bits per second",
+        "N times L divided by R bits per second",
+        "L divided by R plus d divided by s bits per second"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q5 What is traffic intensity and what happens to the average queuing delay as it approaches 1?",
+      "options": [
+        "It is La divided by R and the average queuing delay increases exponentially and approaches infinity",
+        "It is R divided by La and the delay becomes zero",
+        "It is d divided by s and the delay remains constant",
+        "It is L divided by R and the delay depends only on the distance"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q6 A packet at the link layer is specifically referred to as a",
+      "options": [
+        "Segment",
+        "Frame",
+        "Datagram",
+        "Message"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q7 What term refers to the collection of protocols of the various layers?",
+      "options": [
+        "Network core",
+        "Protocol stack",
+        "Encapsulation",
+        "Service model"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q8 What is the primary responsibility of the transport layer?",
+      "options": [
+        "Moving individual bits across a physical medium",
+        "Transporting application layer messages between application processes",
+        "Providing services directly to the network switches",
+        "Routing datagrams from a source host to a destination host"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q9 The information added by a transport layer protocol to an application message is primarily used for what?",
+      "options": [
+        "To define the physical medium of the link",
+        "To implement its service such as allowing the receiver side transport layer to deliver the message to the correct application",
+        "To route the packet through the network core",
+        "To synchronize the clock rates of the sender and receiver"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q10 In the context of encapsulation, the packet from the layer above that is contained within a new packet is called the",
+      "options": [
+        "Header",
+        "Payload",
+        "Segment",
+        "Frame"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q11 Using the airline analogy, the routing of the airplane corresponds most closely to which layer's function?",
+      "options": [
+        "Application layer",
+        "Physical layer",
+        "Transport layer",
+        "Network layer"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q12 Which of the following is a primary advantage of a layered network architecture?",
+      "options": [
+        "It allows the network core to directly process application layer data",
+        "It provides modularity making it easier to update a system component without affecting the rest of the system",
+        "It eliminates the need for complex protocol standards",
+        "It ensures that every layer performs exactly the same tasks for redundancy"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q13 According to the sources, what is a potential drawback of protocol layering?",
+      "options": [
+        "It requires every hardware device to implement all five layers",
+        "One layer may duplicate functionality provided by a lower layer such as error recovery",
+        "It prevents the use of software based protocols",
+        "It makes the system too simple to handle modern tasks"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q14 Which layer handles the transfer of data between neighboring network elements?",
+      "options": [
+        "Network layer",
+        "Transport layer",
+        "Link layer",
+        "Physical layer"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q15 Which device in the Internet architecture must implement all five layers of the protocol stack?",
+      "options": [
+        "Host end system",
+        "Link layer switch",
+        "Router",
+        "Hub"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q1 Which of the following guarantees does the current Internet transport protocols TCP UDP provide?",
+      "options": [
+        "Minimum throughput guarantees",
+        "End to end security by default",
+        "Reliable data transfer via TCP",
+        "Timing Delay guarantees"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q2 Which of the following is a characteristic of the client server architecture?",
+      "options": [
+        "The server is intermittently connected",
+        "The server has a fixed well known IP address",
+        "The server initiates contact with the client",
+        "Clients communicate directly with each other"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q3 Why do applications like DNS typically use UDP instead of TCP?",
+      "options": [
+        "Because UDP provides better security",
+        "To avoid the delay of connection establishment",
+        "Because DNS is an elastic application",
+        "Because they require 100 percent reliable data transfer"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q4 Where is Transport Layer Security TLS implemented in the protocol stack?",
+      "options": [
+        "Application layer using libraries that use TCP",
+        "Link layer",
+        "Network layer",
+        "Physical layer"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q5 Which type of application can make use of whatever throughput it happens to get however much or little that may be?",
+      "options": [
+        "Loss tolerant applications",
+        "Elastic applications",
+        "Real time applications",
+        "Bandwidth sensitive applications"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q6 What is a drawback of using the P2P architecture?",
+      "options": [
+        "It requires expensive always on servers",
+        "It cannot scale to large numbers of users",
+        "It faces challenges in security performance and reliability due to decentralization",
+        "It relies on fixed IP addresses for every host"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q7 Which component of an application layer protocol defines the meaning of the information in the fields of a message?",
+      "options": [
+        "Syntax",
+        "Encryption",
+        "Rules",
+        "Semantics"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q8 What is considered the most compelling feature of a Peer to Peer architecture?",
+      "options": [
+        "Fixed IP addresses for all peers",
+        "Self scalability",
+        "Always on infrastructure",
+        "Centralized management"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q9 Which software interface acts as the door between an application process and the transport layer protocol?",
+      "options": [
+        "Socket",
+        "Framing sub layer",
+        "IP address",
+        "NIC Network Interface Card"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q10 Where do network application programs run in the Internet architecture?",
+      "options": [
+        "On all devices across the network including the core",
+        "On link layer switches",
+        "On routers in the network core",
+        "On end systems hosts at the network edge"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q11 What does the HTTP status code 404 Not Found indicate?",
+      "options": [
+        "The server does not support the requested HTTP version",
+        "The requested object has moved permanently to a new URL",
+        "The request message was not understood by the server",
+        "The requested document does not exist on the server"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q12 Which HTTP request method is used when user input is included in the URL field for example following a question mark?",
+      "options": [
+        "HEAD",
+        "PUT",
+        "POST",
+        "GET"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q13 How does the Conditional GET mechanism prevent the transfer of stale objects?",
+      "options": [
+        "It uses a cookie to track the last time the user saw the object",
+        "It requires the server to send a NAK if the object is old",
+        "It includes an If modified since header to check if the servers object has changed since it was cached",
+        "It deletes the object from the cache after one week"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q14 Why is HTTP referred to as a stateless protocol?",
+      "options": [
+        "It does not support encryption for data transfer",
+        "Clients are required to remain connected to the server at all times",
+        "It only allows one request per geographical state",
+        "The server maintains no information about past client requests"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q15 Which transport protocol and default port does HTTP typically use?",
+      "options": [
+        "UDP and port 53",
+        "QUIC and port 443",
+        "IP and port 25",
+        "TCP and port 80"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q16 How does HTTP 2 mitigate the HOL blocking problem over a single TCP connection?",
+      "options": [
+        "By using a first come first served FCFS scheduling policy",
+        "By breaking each message into small frames and interleaving them",
+        "By opening six parallel TCP connections to the same server",
+        "By requiring the client to use a larger congestion window"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q17 How does Persistent HTTP HTTP 1.1 improve performance over non persistent HTTP?",
+      "options": [
+        "It eliminates the need for header lines in request messages",
+        "It allows the server to push objects to the client without a request",
+        "It uses UDP to eliminate the handshaking delay",
+        "The server leaves the TCP connection open allowing multiple objects to be sent over the same connection"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q18 Which technology is a centerpiece of HTTP 3 to improve performance?",
+      "options": [
+        "QUIC an application layer protocol running over UDP",
+        "TDM Time Division Multiplexing",
+        "FDM Frequency Division Multiplexing",
+        "SMTP Simple Mail Transfer Protocol"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q19 What is the primary benefit of a Web cache proxy server?",
+      "options": [
+        "It reduces response times for client requests and decreases traffic on access links",
+        "It automatically encrypts all HTTP traffic using TLS",
+        "It provides a fixed well known IP address for all mobile clients",
+        "It prevents users from visiting controversial Web sites"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q20 What does a typical Web page consist of?",
+      "options": [
+        "A collection of cookies stored on a remote server",
+        "A single large binary file containing all data",
+        "A base HTML file that includes several referenced objects such as images or scripts",
+        "A single TCP connection that cannot be closed"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q1 Which protocol is used by a user agent to retrieve messages from a mail server?",
+      "options": [
+        "IMAP",
+        "DNS",
+        "SNMP",
+        "SMTP"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q2 Which of the following is a legacy characteristic of SMTP that distinguishes it from HTTP?",
+      "options": [
+        "It requires a three way handshake at the application layer",
+        "It restricts the body of all mail messages to 7 bit ASCII",
+        "It does not use persistent connections",
+        "It uses a pull mechanism to send data"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q3 How does the data transfer philosophy of SMTP compare to HTTP?",
+      "options": [
+        "Both are strictly pull protocols",
+        "SMTP is a push protocol whereas HTTP is a pull protocol",
+        "Both are strictly push protocols",
+        "SMTP is a pull protocol whereas HTTP is a push protocol"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q4 During an SMTP session what does the client send to the server to indicate the end of the message data?",
+      "options": [
+        "A blank line",
+        "The command QUIT",
+        "A line containing only a single period CRLF CRLF",
+        "The binary value 0x00"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q5 What happens if Alices mail server finds Bobs mail server is temporarily down?",
+      "options": [
+        "The message is retained in a message queue and the server attempts retransmission later",
+        "The message is sent to a root DNS server for storage",
+        "The message is immediately discarded and Alice is notified",
+        "The message is automatically converted to an SMS text"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q6 Which DNS resource record type maps a hostname to its corresponding IP address?",
+      "options": [
+        "Type A",
+        "Type CNAME",
+        "Type NS",
+        "Type MX"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q7 What is the primary function of the Domain Name System DNS?",
+      "options": [
+        "To provide end to end encryption for web traffic",
+        "To manage the flow of email messages between mail servers",
+        "To translate human friendly hostnames into their underlying IP addresses",
+        "To assign MAC addresses to local network interfaces"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q8 Which transport layer protocol and port number does the DNS protocol typically use?",
+      "options": [
+        "TCP and port 80",
+        "UDP and port 443",
+        "TCP and port 25",
+        "UDP and port 53"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q9 According to 2020 estimates what percentage of residential ISP traffic is consumed by streaming video services?",
+      "options": [
+        "65 percent",
+        "50 percent",
+        "80 percent",
+        "95 percent"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q10 What does DASH stand for in video streaming?",
+      "options": [
+        "Delayed Access via Synchronized HTTP",
+        "Dynamic Adaptive Streaming over HTTP",
+        "Data Analysis for Streaming Hubs",
+        "Digital Access Service for Hosts"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q11 Which CDN placement philosophy deploys servers deep in access ISPs?",
+      "options": [
+        "Bring Home",
+        "Enter Deep",
+        "Centralized Data Center",
+        "Direct Connect"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q12 What is the primary purpose of client side buffering and playout delay?",
+      "options": [
+        "To reduce server processing load",
+        "To encrypt the video data",
+        "To increase video resolution",
+        "To compensate for variable network delays jitter"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q13 Which platform does Netflix use for content ingestion and processing?",
+      "options": [
+        "Google Cloud",
+        "Amazon Cloud",
+        "Private IXP racks",
+        "Microsoft Azure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q1 Why TCP server needs two sockets?",
+      "options": [
+        "Welcoming socket and connection socket",
+        "Data plane and control plane",
+        "One for send one for receive",
+        "ASCII and binary data"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q2 Which parameter specifies TCP socket?",
+      "options": [
+        "SOCK_TCP",
+        "SOCK_RELIABLE",
+        "SOCK_DGRAM",
+        "SOCK_STREAM"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q3 Why TCP send does not need destination address?",
+      "options": [
+        "OS chooses random",
+        "Connection already established",
+        "Uses broadcast",
+        "Extracted from app header"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q4 Purpose of connect method in TCP client?",
+      "options": [
+        "Close server door",
+        "Initiate handshake and connection",
+        "Associate local port",
+        "Wait for packets"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q5 What is the definition of a socket in network applications?",
+      "options": [
+        "The software interface door between application and transport layer",
+        "A physical port on a router",
+        "A 32 bit identifier for a host",
+        "A hardware chip in NIC"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q6 In UDP what must sender attach to each data chunk?",
+      "options": [
+        "Destination IP and port",
+        "Three way handshake request",
+        "MAC address of gateway",
+        "Sequence number and ack bit"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q7 How to handle message not arriving in Python socket?",
+      "options": [
+        "Call bind multiple times",
+        "Switch to SOCK_STREAM",
+        "Use listen with large parameter",
+        "Use settimeout with try except"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q8 Which Python method sends UDP packet?",
+      "options": [
+        "sendto",
+        "accept",
+        "send",
+        "connect"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q9 Which method binds server to port?",
+      "options": [
+        "listen",
+        "socket",
+        "bind",
+        "connect"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q10 What does recvfrom return in UDP?",
+      "options": [
+        "HTTP status and HTML",
+        "Client IP and server port",
+        "Sequence number and payload",
+        "Data and sender address"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q11 What does accept return to server?",
+      "options": [
+        "Status code",
+        "Server IP and port",
+        "Only data string",
+        "New socket and client address"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q12 What does listen parameter represent?",
+      "options": [
+        "Timeout seconds",
+        "IP version",
+        "Port number",
+        "Max queued connections"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q13 What happens to welcoming socket after accept?",
+      "options": [
+        "Remains open for new connections",
+        "Converted to UDP",
+        "Renamed",
+        "Closed"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q14 Advantage of UDP for request-response?",
+      "options": [
+        "Congestion control",
+        "Reliable transfer",
+        "Ordered delivery",
+        "No handshake delay"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q15 What does AF_INET signify in Python socket?",
+      "options": [
+        "Uses IPv4 network",
+        "P2P architecture",
+        "Uses reliable byte stream",
+        "Specific for web server"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q1 What is the primary function of a transport layer protocol?",
+      "options": [
+        "To provide physical communication between routers in the network core",
+        "To manage the transmission of individual bits across a physical link",
+        "To provide logical communication between application processes running on different hosts",
+        "To provide logical communication between hosts across the entire Internet"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q2 Which statement about transport and network layer services is true?",
+      "options": [
+        "Transport can provide reliable transfer over unreliable network",
+        "Transport cannot provide service not offered by network",
+        "Encryption only at network layer",
+        "Network guarantees can be ignored by transport"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q3 in the household analogy if Ann and Bill represent transport layer what does the postal service represent?",
+      "options": [
+        "The physical layer media",
+        "The link layer protocol",
+        "The network layer protocol",
+        "The application layer protocol"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q4 Where are transport layer protocols implemented in the Internet architecture?",
+      "options": [
+        "Within the physical media to ensure bit level integrity",
+        "Exclusively in the end systems hosts",
+        "In both end systems and intermediate routers",
+        "Only in the network core switches to facilitate rapid data transfer"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q5 Which correctly distinguishes transport and network layers?",
+      "options": [
+        "Transport layer routes datagrams network layer reassembles segments",
+        "They perform identical tasks",
+        "Transport layer provides logical communication between hosts network layer provides logical communication between processes",
+        "Network layer provides logical communication between hosts transport layer provides logical communication between processes"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q6 Which transport layer function is responsible for delivering the data in a received segment to the correct socket?",
+      "options": [
+        "Routing",
+        "Demultiplexing",
+        "Encapsulation",
+        "Multiplexing"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q7 What is purpose of source port number?",
+      "options": [
+        "Return address for response",
+        "Indicate priority",
+        "Define data length",
+        "Tell router path"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q8 What happens if TCP SYN arrives at closed port?",
+      "options": [
+        "Start application",
+        "Send RST segment",
+        "Forward to DNS",
+        "Ignored"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q9 What is the range of well known port numbers?",
+      "options": [
+        "0 to 65535",
+        "0 to 1023",
+        "1024 to 49151",
+        "0 to 255"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q10 What is the definition of multiplexing at the source host?",
+      "options": [
+        "Gathering data from sockets encapsulating with headers into segments and passing to network layer",
+        "Determining end to end path for a datagram",
+        "Translating hostnames into IP addresses",
+        "Delivering data segments to the appropriate application process"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q11 Which of the following best describes the service model provided by UDP?",
+      "options": [
+        "A circuit switched service that reserves dedicated bandwidth for each session",
+        "A no frills best effort service where segments may be lost or delivered out of order",
+        "A connection oriented service with guaranteed in order delivery",
+        "A reliable byte stream service that performs flow and congestion control"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q12 What is the specific purpose of the UDP checksum field?",
+      "options": [
+        "To identify the application layer process at the destination",
+        "To determine the sequence number of the next expected byte",
+        "To specify the total length of the UDP segment in bytes",
+        "To detect bit errors flipped bits in the transmitted segment"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q13 How many bytes of header overhead does a standard UDP segment have?",
+      "options": [
+        "8 bytes",
+        "40 bytes",
+        "12 bytes",
+        "20 bytes"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q14 Regarding congestion control how does UDP behave when the network becomes overloaded?",
+      "options": [
+        "It works with the network layer to reroute traffic around congested links",
+        "It automatically throttles the sender to its fair share of bandwidth",
+        "It uses a window based mechanism to reduce its transmission rate",
+        "It has no congestion control and can blast away as fast as the application desires"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q15 What is a primary reason an application developer might choose UDP over TCP?",
+      "options": [
+        "UDP ensures that the sender will not overwhelm the receiver",
+        "UDP maintains extensive connection state information to improve performance",
+        "UDP does not require a formal connection establishment avoiding the delay of a three way handshake",
+        "UDP provides built in recovery from packet loss"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q1 Looking at the FSM for the rdt 2.0 sender, what does sender do if it receives a NAK while waiting for ACK or NAK?",
+      "options": [
+        "It closes the connection",
+        "It increments the sequence number",
+        "It moves to wait for call from above state",
+        "It retransmits the last sent packet and remains waiting for ACK or NAK"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q2 Which mechanism is introduced in rdt 2.0 specifically to handle a channel that may flip bits?",
+      "options": [
+        "32 bit sequence numbers",
+        "Timers",
+        "Checksums along with positive ACK and negative NAK acknowledgments",
+        "Stop and wait windows"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q3 In protocol rdt 1.0, what is the primary assumption made about the underlying channel?",
+      "options": [
+        "It may flip bits but never loses packets",
+        "It handles all flow control automatically",
+        "It uses sequence numbers to ensure in order delivery",
+        "It is perfectly reliable meaning no bit errors and no packet loss occur"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q4 Why is rdt 3.0 often called the alternating bit protocol?",
+      "options": [
+        "Because sender and receiver alternate roles",
+        "Because it alternates between TCP and UDP",
+        "Because it uses two checksum algorithms",
+        "Because packet sequence numbers alternate between 0 and 1"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q5 Why is the rdt 2.0 sender described as a stop and wait protocol?",
+      "options": [
+        "It stops transmitting after 10 packets",
+        "It will not send new data until it receives ACK for current packet",
+        "It waits for a timer before every transmission",
+        "It pauses for 1 RTT between every bit"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Q6 What new mechanism is required in rdt 3.0 to detect if a packet or ACK has been lost?",
+      "options": [
+        "A larger checksum",
+        "A three way handshake",
+        "Exponential backoff",
+        "A countdown timer"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q7 Protocol rdt 3.0 is designed to handle a channel that can also:",
+      "options": [
+        "Multiply packets",
+        "Reorder packets",
+        "Lose packets (data or ACKs)",
+        "Provide infinite bandwidth"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q8 Which rdt interface function is called by application layer to initiate transfer of data?",
+      "options": [
+        "udt_send",
+        "rdt_rcv",
+        "deliver_data",
+        "rdt_send"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q9 In rdt 3.0, if ACK is delayed causing premature timeout, how is duplicate packet handled?",
+      "options": [
+        "The receiver crashes",
+        "The sender ignores all later ACKS",
+        "The sequence numbers allow receiver to identify and discard duplicate",
+        "The protocol deadlocks"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Q10 What is the fatal flaw identified in rdt 2.0?",
+      "options": [
+        "It fails on reliable channels",
+        "It cannot handle high speed links",
+        "It uses too many sequence numbers",
+        "It does not account for corrupted ACK or NAK packets"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q11 In protocol rdt 2.1, how many sequence numbers are sufficient for stop and wait?",
+      "options": [
+        "One per application message",
+        "2 power 32",
+        "Four (0, 1, 2 and 3)",
+        "Two (0 and 1)"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q12 How does rdt 2.1 solve the problem of corrupted ACKs or NAKs?",
+      "options": [
+        "By doubling timeout interval",
+        "By requiring receiver to send NAK for every successful packet",
+        "By using a larger checksum",
+        "By adding a sequence number to data packets so receiver detects duplicates"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q13 What is the primary difference between rdt 2.1 and rdt 2.2?",
+      "options": [
+        "rdt 2.2 is a NAK free protocol using ACKs with sequence numbers",
+        "rdt 2.2 allows multiple packets in flight",
+        "rdt 2.2 adds a countdown timer",
+        "rdt 2.2 is for reliable channels only"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Q14 In the FSM for the rdt 1.0 receiver, what action is taken when a packet is received?",
+      "options": [
+        "The packet is buffered for reassembly",
+        "An ACK is sent to the sender",
+        "The receiver waits for a sequence number check",
+        "The data is extracted from the packet and delivered to the upper layer"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Q15 In rdt 2.2, if sender receives duplicate ACK, what action does it take?",
+      "options": [
+        "It moves to next sequence number",
+        "It ignores ACK and waits timeout",
+        "It sends a query to receiver",
+        "It retransmits the current data packet"
+      ],
+      "answer": 3
+    }
+  ]
